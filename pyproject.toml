@@ -1,0 +1,22 @@
+[project]
+name = "grq-cli"
+version = "0.2.0"
+description = "Zero-dependency Groq command-line tool: prompts with files, images, stdin and parallel batch runs"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Ishu Chaudhary" }]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+grq = "grq:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["grq"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
