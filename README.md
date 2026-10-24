@@ -16,7 +16,7 @@ Or skip installing: `python3 grq.py "prompt"` works on any Python 3.9+. Keys com
 ```
 grq "prompt"                                plain prompt
 grq "summarise" -f notes.md -f data.csv     attach text files
-grq "what's in this chart?" -f chart.png -m meta-llama/llama-4-scout-17b-16e-instruct   images (vision models)
+grq "describe this chart" -f chart.png -m <vision model>   images (pick a vision model from --list)
 cat log.txt | grq "find the error"          stdin becomes context
 grq "prompt" -o out.md                      write to a file, prints token count
 grq "prompt" -m openai/gpt-oss-120b         pick a model (default llama-3.3-70b-versatile, or GROQ_MODEL)
